@@ -66,7 +66,7 @@ class Pizza1 {
     const toppingPrice = 2;
     return basePrice + this.toppings.length * toppingPrice;
   }
-
+  //setter allows for data validation before updating information
   set size(size) {
     if (size === 's' || size === 'm' || size === 'l') {
       this._size = size;
@@ -81,3 +81,4 @@ pizza1.addTopping("ham");
 
 console.log(pizza.size);
 console.log(pizza1);
+console.log(pizza1.price);
